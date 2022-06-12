@@ -1,0 +1,5 @@
+C:\Users\diogo\source\repos\microservices-serverless-shop\Collector\obj\Debug\net6.0\Collector.csproj.AssemblyReference.cache
+C:\Users\diogo\source\repos\microservices-serverless-shop\Collector\obj\Debug\net6.0\Collector.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\diogo\source\repos\microservices-serverless-shop\Collector\obj\Debug\net6.0\Collector.AssemblyInfoInputs.cache
+C:\Users\diogo\source\repos\microservices-serverless-shop\Collector\obj\Debug\net6.0\Collector.AssemblyInfo.cs
+C:\Users\diogo\source\repos\microservices-serverless-shop\Collector\obj\Debug\net6.0\Collector.csproj.CoreCompileInputs.cache
