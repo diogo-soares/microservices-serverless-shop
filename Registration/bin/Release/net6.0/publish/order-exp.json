@@ -1,0 +1,24 @@
+﻿{
+  "TotalValue": 0,
+  "Client": {
+    "Id": 1,
+    "Name": "Diogo soares",
+    "CPF": "6546132",
+    "Email": "diogosoaresdev@hotmail.com"
+  },
+  "Payment": {
+    "CardNumber": "564546",
+    "Validity": "15/07/2021",
+    "CVV": "123"
+  },
+  "Products": [
+    {
+      "Id": "1",
+      "Amount": 2
+    },
+    {
+      "Id": "2",
+      "Amount": 1
+    }
+  ] 
+}

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "83Nj1EOxGQ2GXVokh8DZdsUbwNiAcHfE8hSn0ofQZE4o6hD/G1YyeA9NPnj2sm82XXu5eFwK+n7pfCLlxhAaFA==",
+  "dgSpecHash": "3tmqd/1BzuAc17Ogfs4esxUtDakXr5cEuRCf3Q6NbRuGjqTRVT142Ykrdc1AgLNvZm/SBNdPaCDokFb1Mf4brg==",
   "success": true,
   "projectFilePath": "C:\\Users\\diogo\\source\\repos\\microservices-serverless-shop\\Registration\\Registration.csproj",
   "expectedPackageFiles": [
@@ -22,7 +22,10 @@
     "C:\\Users\\diogo\\.nuget\\packages\\microsoft.extensions.primitives\\2.1.0\\microsoft.extensions.primitives.2.1.0.nupkg.sha512",
     "C:\\Users\\diogo\\.nuget\\packages\\system.memory\\4.5.0\\system.memory.4.5.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.runtime.compilerservices.unsafe\\4.5.0\\system.runtime.compilerservices.unsafe.4.5.0.nupkg.sha512",
-    "C:\\Users\\diogo\\.nuget\\packages\\microsoft.netcore.app.crossgen2.win-x64\\6.0.5\\microsoft.netcore.app.crossgen2.win-x64.6.0.5.nupkg.sha512"
+    "C:\\Users\\diogo\\.nuget\\packages\\microsoft.netcore.app.runtime.linux-x64\\6.0.5\\microsoft.netcore.app.runtime.linux-x64.6.0.5.nupkg.sha512",
+    "C:\\Users\\diogo\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.linux-x64\\6.0.5\\microsoft.aspnetcore.app.runtime.linux-x64.6.0.5.nupkg.sha512",
+    "C:\\Users\\diogo\\.nuget\\packages\\microsoft.netcore.app.crossgen2.win-x64\\6.0.5\\microsoft.netcore.app.crossgen2.win-x64.6.0.5.nupkg.sha512",
+    "C:\\Users\\diogo\\.nuget\\packages\\microsoft.netcore.app.host.linux-x64\\6.0.5\\microsoft.netcore.app.host.linux-x64.6.0.5.nupkg.sha512"
   ],
   "logs": []
 }
