@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3tmqd/1BzuAc17Ogfs4esxUtDakXr5cEuRCf3Q6NbRuGjqTRVT142Ykrdc1AgLNvZm/SBNdPaCDokFb1Mf4brg==",
+  "dgSpecHash": "jfjgwNqP0tFAMI3UpeqBj3LzlPDQ9Y8BnvKUPPAzjLwRJAbNpeh0MAv8YzIFtjGvNFgtX9QqQR1oEcSLMK45Kw==",
   "success": true,
   "projectFilePath": "C:\\Users\\diogo\\source\\repos\\microservices-serverless-shop\\Registration\\Registration.csproj",
   "expectedPackageFiles": [
@@ -8,10 +8,11 @@
     "C:\\Users\\diogo\\.nuget\\packages\\amazon.lambda.applicationloadbalancerevents\\2.1.0\\amazon.lambda.applicationloadbalancerevents.2.1.0.nupkg.sha512",
     "C:\\Users\\diogo\\.nuget\\packages\\amazon.lambda.aspnetcoreserver\\7.2.0\\amazon.lambda.aspnetcoreserver.7.2.0.nupkg.sha512",
     "C:\\Users\\diogo\\.nuget\\packages\\amazon.lambda.core\\2.1.0\\amazon.lambda.core.2.1.0.nupkg.sha512",
+    "C:\\Users\\diogo\\.nuget\\packages\\amazon.lambda.dynamodbevents\\2.1.1\\amazon.lambda.dynamodbevents.2.1.1.nupkg.sha512",
     "C:\\Users\\diogo\\.nuget\\packages\\amazon.lambda.logging.aspnetcore\\3.1.0\\amazon.lambda.logging.aspnetcore.3.1.0.nupkg.sha512",
     "C:\\Users\\diogo\\.nuget\\packages\\amazon.lambda.serialization.systemtextjson\\2.3.0\\amazon.lambda.serialization.systemtextjson.2.3.0.nupkg.sha512",
-    "C:\\Users\\diogo\\.nuget\\packages\\awssdk.core\\3.7.11.15\\awssdk.core.3.7.11.15.nupkg.sha512",
-    "C:\\Users\\diogo\\.nuget\\packages\\awssdk.dynamodbv2\\3.7.3.47\\awssdk.dynamodbv2.3.7.3.47.nupkg.sha512",
+    "C:\\Users\\diogo\\.nuget\\packages\\awssdk.core\\3.7.11.3\\awssdk.core.3.7.11.3.nupkg.sha512",
+    "C:\\Users\\diogo\\.nuget\\packages\\awssdk.dynamodbv2\\3.7.3.35\\awssdk.dynamodbv2.3.7.3.35.nupkg.sha512",
     "C:\\Users\\diogo\\.nuget\\packages\\microsoft.extensions.configuration\\2.1.0\\microsoft.extensions.configuration.2.1.0.nupkg.sha512",
     "C:\\Users\\diogo\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\2.1.0\\microsoft.extensions.configuration.abstractions.2.1.0.nupkg.sha512",
     "C:\\Users\\diogo\\.nuget\\packages\\microsoft.extensions.configuration.binder\\2.1.0\\microsoft.extensions.configuration.binder.2.1.0.nupkg.sha512",
@@ -22,10 +23,7 @@
     "C:\\Users\\diogo\\.nuget\\packages\\microsoft.extensions.primitives\\2.1.0\\microsoft.extensions.primitives.2.1.0.nupkg.sha512",
     "C:\\Users\\diogo\\.nuget\\packages\\system.memory\\4.5.0\\system.memory.4.5.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.runtime.compilerservices.unsafe\\4.5.0\\system.runtime.compilerservices.unsafe.4.5.0.nupkg.sha512",
-    "C:\\Users\\diogo\\.nuget\\packages\\microsoft.netcore.app.runtime.linux-x64\\6.0.5\\microsoft.netcore.app.runtime.linux-x64.6.0.5.nupkg.sha512",
-    "C:\\Users\\diogo\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.linux-x64\\6.0.5\\microsoft.aspnetcore.app.runtime.linux-x64.6.0.5.nupkg.sha512",
-    "C:\\Users\\diogo\\.nuget\\packages\\microsoft.netcore.app.crossgen2.win-x64\\6.0.5\\microsoft.netcore.app.crossgen2.win-x64.6.0.5.nupkg.sha512",
-    "C:\\Users\\diogo\\.nuget\\packages\\microsoft.netcore.app.host.linux-x64\\6.0.5\\microsoft.netcore.app.host.linux-x64.6.0.5.nupkg.sha512"
+    "C:\\Users\\diogo\\.nuget\\packages\\microsoft.netcore.app.crossgen2.win-x64\\6.0.5\\microsoft.netcore.app.crossgen2.win-x64.6.0.5.nupkg.sha512"
   ],
   "logs": []
 }

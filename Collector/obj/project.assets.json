@@ -55,6 +55,22 @@
         "runtime": {
           "lib/netcoreapp3.1/AWSSDK.DynamoDBv2.dll": {}
         }
+      },
+      "Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AWSSDK.DynamoDBv2": "3.7.3.35",
+          "Amazon.Lambda.Core": "2.1.0",
+          "Amazon.Lambda.DynamoDBEvents": "2.1.1",
+          "Amazon.Lambda.Serialization.SystemTextJson": "2.3.0"
+        },
+        "compile": {
+          "bin/placeholder/Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.dll": {}
+        }
       }
     }
   },
@@ -157,14 +173,16 @@
         "tools/install.ps1",
         "tools/uninstall.ps1"
       ]
+    },
+    "Shared/1.0.0": {
+      "type": "project",
+      "path": "../Shared/Shared.csproj",
+      "msbuildProject": "../Shared/Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "AWSSDK.DynamoDBv2 >= 3.7.3.35",
-      "Amazon.Lambda.Core >= 2.1.0",
-      "Amazon.Lambda.DynamoDBEvents >= 2.1.1",
-      "Amazon.Lambda.Serialization.SystemTextJson >= 2.3.0"
+      "Shared >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -174,11 +192,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\diogo\\source\\repos\\microservices-serverless-shop\\Shared\\Shared.csproj",
-      "projectName": "Shared",
-      "projectPath": "C:\\Users\\diogo\\source\\repos\\microservices-serverless-shop\\Shared\\Shared.csproj",
+      "projectUniqueName": "C:\\Users\\diogo\\source\\repos\\microservices-serverless-shop\\Collector\\Collector.csproj",
+      "projectName": "Collector",
+      "projectPath": "C:\\Users\\diogo\\source\\repos\\microservices-serverless-shop\\Collector\\Collector.csproj",
       "packagesPath": "C:\\Users\\diogo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\diogo\\source\\repos\\microservices-serverless-shop\\Shared\\obj\\",
+      "outputPath": "C:\\Users\\diogo\\source\\repos\\microservices-serverless-shop\\Collector\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -197,7 +215,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\diogo\\source\\repos\\microservices-serverless-shop\\Shared\\Shared.csproj": {
+              "projectPath": "C:\\Users\\diogo\\source\\repos\\microservices-serverless-shop\\Shared\\Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -209,24 +231,6 @@
     "frameworks": {
       "net6.0": {
         "targetAlias": "net6.0",
-        "dependencies": {
-          "AWSSDK.DynamoDBv2": {
-            "target": "Package",
-            "version": "[3.7.3.35, )"
-          },
-          "Amazon.Lambda.Core": {
-            "target": "Package",
-            "version": "[2.1.0, )"
-          },
-          "Amazon.Lambda.DynamoDBEvents": {
-            "target": "Package",
-            "version": "[2.1.1, )"
-          },
-          "Amazon.Lambda.Serialization.SystemTextJson": {
-            "target": "Package",
-            "version": "[2.3.0, )"
-          }
-        },
         "imports": [
           "net461",
           "net462",
@@ -237,6 +241,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Crossgen2.win-x64",
+            "version": "[6.0.5, 6.0.5]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"

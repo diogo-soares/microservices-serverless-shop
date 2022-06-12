@@ -64,19 +64,7 @@
           "warn": true,
           "downloadDependencies": [
             {
-              "name": "Microsoft.AspNetCore.App.Runtime.linux-x64",
-              "version": "[6.0.5, 6.0.5]"
-            },
-            {
               "name": "Microsoft.NETCore.App.Crossgen2.win-x64",
-              "version": "[6.0.5, 6.0.5]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.linux-x64",
-              "version": "[6.0.5, 6.0.5]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Runtime.linux-x64",
               "version": "[6.0.5, 6.0.5]"
             }
           ],
@@ -89,11 +77,6 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "linux-x64": {
-          "#import": []
         }
       }
     },
@@ -138,7 +121,19 @@
           "dependencies": {
             "AWSSDK.DynamoDBv2": {
               "target": "Package",
-              "version": "[3.7.3.47, )"
+              "version": "[3.7.3.35, )"
+            },
+            "Amazon.Lambda.Core": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "Amazon.Lambda.DynamoDBEvents": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Amazon.Lambda.Serialization.SystemTextJson": {
+              "target": "Package",
+              "version": "[2.3.0, )"
             }
           },
           "imports": [
@@ -157,11 +152,6 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "linux-x64": {
-          "#import": []
         }
       }
     }
