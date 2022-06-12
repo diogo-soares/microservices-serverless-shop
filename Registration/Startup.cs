@@ -23,7 +23,10 @@ public class Startup
             app.UseDeveloperExceptionPage();
         }
 
+#if DEBUG
+#else
         app.UseHttpsRedirection();
+#endif
 
         app.UseRouting();
 

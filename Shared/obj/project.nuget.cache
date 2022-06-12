@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "gSyFvoI5ya7Znd81GXu4nf932fZewwYe8Kj0TcmWEgBoy+cUTxZ52pqfNpc5g2LrgmpmWbMQHIFN1iXjHBB+ZQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\diogo\\source\\repos\\microservices-serverless-shop\\Shared\\Shared.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\diogo\\.nuget\\packages\\awssdk.core\\3.7.11.15\\awssdk.core.3.7.11.15.nupkg.sha512",
+    "C:\\Users\\diogo\\.nuget\\packages\\awssdk.dynamodbv2\\3.7.3.47\\awssdk.dynamodbv2.3.7.3.47.nupkg.sha512"
+  ],
+  "logs": []
+}

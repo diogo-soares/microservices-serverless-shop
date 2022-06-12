@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "JUAoQ8k9krREGMdo3+32Tic1eCQFtGi6zUnFcbWlHHU3wtXwwVtWWrVFcrqXlbQztOjqKIrWxOOm2PYHnbLB7Q==",
+  "dgSpecHash": "83Nj1EOxGQ2GXVokh8DZdsUbwNiAcHfE8hSn0ofQZE4o6hD/G1YyeA9NPnj2sm82XXu5eFwK+n7pfCLlxhAaFA==",
   "success": true,
   "projectFilePath": "C:\\Users\\diogo\\source\\repos\\microservices-serverless-shop\\Registration\\Registration.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,8 @@
     "C:\\Users\\diogo\\.nuget\\packages\\amazon.lambda.core\\2.1.0\\amazon.lambda.core.2.1.0.nupkg.sha512",
     "C:\\Users\\diogo\\.nuget\\packages\\amazon.lambda.logging.aspnetcore\\3.1.0\\amazon.lambda.logging.aspnetcore.3.1.0.nupkg.sha512",
     "C:\\Users\\diogo\\.nuget\\packages\\amazon.lambda.serialization.systemtextjson\\2.3.0\\amazon.lambda.serialization.systemtextjson.2.3.0.nupkg.sha512",
+    "C:\\Users\\diogo\\.nuget\\packages\\awssdk.core\\3.7.11.15\\awssdk.core.3.7.11.15.nupkg.sha512",
+    "C:\\Users\\diogo\\.nuget\\packages\\awssdk.dynamodbv2\\3.7.3.47\\awssdk.dynamodbv2.3.7.3.47.nupkg.sha512",
     "C:\\Users\\diogo\\.nuget\\packages\\microsoft.extensions.configuration\\2.1.0\\microsoft.extensions.configuration.2.1.0.nupkg.sha512",
     "C:\\Users\\diogo\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\2.1.0\\microsoft.extensions.configuration.abstractions.2.1.0.nupkg.sha512",
     "C:\\Users\\diogo\\.nuget\\packages\\microsoft.extensions.configuration.binder\\2.1.0\\microsoft.extensions.configuration.binder.2.1.0.nupkg.sha512",
