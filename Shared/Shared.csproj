@@ -12,6 +12,8 @@
 		<PackageReference Include="Amazon.Lambda.Serialization.SystemTextJson" Version="2.3.0" />
 		<PackageReference Include="Amazon.Lambda.DynamoDBEvents" Version="2.1.1" />
 		<PackageReference Include="AWSSDK.DynamoDBv2" Version="3.7.3.35" />
+		<PackageReference Include="AWSSDK.SQS" Version="3.7.2.68" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
 	</ItemGroup>
 
 </Project>

@@ -11,7 +11,7 @@ namespace Collector;
 
 public class Function
 {
-    public async Task FunctionHandlerAsync(DynamoDBEvent dynamoEvent, ILambdaContext context)
+    public async Task FunctionHandler(DynamoDBEvent dynamoEvent, ILambdaContext context)
     {
         foreach (var record in dynamoEvent.Records)
         {
@@ -22,11 +22,17 @@ public class Function
                 try
                 {
                     await ProcessOrderAmount(order);
+                    // send to queue order
+                    await AmazonUtil.SendToQueue(EnumQueueSQS.order, order);
+                    context.Logger.LogLine($"Sucess Order: '{order.Id}'");
+
                 }
                 catch (Exception ex)
                 {
+                    context.Logger.LogLine($"Error: '{ex.Message}'");
                     order.CancellationJustification = ex.Message;
                     order.Canceled = true;
+                    await AmazonUtil.SendToQueue(EnumQueueSNS.failure, order);
                     //add Dead letter queue
                 }
                 // save order
@@ -58,9 +64,9 @@ public class Function
         var client = new AmazonDynamoDBClient(RegionEndpoint.SAEast1);
         var request = new QueryRequest
         {
-            TableName = "inventory",
+            TableName = "stock",
             KeyConditionExpression = "Id = :v_id",
-            ExpressionAttributeValues = new Dictionary<string, AttributeValue> { { "v_id", new AttributeValue { S = id } } }
+            ExpressionAttributeValues = new Dictionary<string, AttributeValue> { { ":v_id", new AttributeValue { S = id } } }
         };
 
         var response = await client.QueryAsync(request);

@@ -123,6 +123,10 @@
               "target": "Package",
               "version": "[3.7.3.35, )"
             },
+            "AWSSDK.SQS": {
+              "target": "Package",
+              "version": "[3.7.2.68, )"
+            },
             "Amazon.Lambda.Core": {
               "target": "Package",
               "version": "[2.1.0, )"
@@ -134,6 +138,10 @@
             "Amazon.Lambda.Serialization.SystemTextJson": {
               "target": "Package",
               "version": "[2.3.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
             }
           },
           "imports": [

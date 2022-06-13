@@ -1,4 +1,6 @@
 ﻿using Amazon.DynamoDBv2.DataModel;
+using Newtonsoft.Json.Converters;
+using System.Text.Json.Serialization;
 
 namespace Shared
 {
@@ -20,7 +22,10 @@ namespace Shared
         public Client Client { get; set; }
         public Payment Payment { get; set; }
         public string CancellationJustification { get; set; }
+
+        [JsonConverter(typeof(StringEnumConverter))]
         public StatusOder Status { get; set; }
+
         public bool Canceled { get; set; }
     }
 }

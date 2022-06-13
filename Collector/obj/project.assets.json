@@ -35,7 +35,7 @@
           "lib/net6.0/Amazon.Lambda.Serialization.SystemTextJson.dll": {}
         }
       },
-      "AWSSDK.Core/3.7.11.3": {
+      "AWSSDK.Core/3.7.11.15": {
         "type": "package",
         "compile": {
           "lib/netcoreapp3.1/AWSSDK.Core.dll": {}
@@ -44,26 +44,144 @@
           "lib/netcoreapp3.1/AWSSDK.Core.dll": {}
         }
       },
-      "AWSSDK.DynamoDBv2/3.7.3.35": {
+      "AWSSDK.DynamoDBv2/3.7.3.47": {
         "type": "package",
         "dependencies": {
-          "AWSSDK.Core": "[3.7.11.3, 4.0.0)"
+          "AWSSDK.Core": "[3.7.11.15, 4.0.0)"
         },
         "compile": {
           "lib/netcoreapp3.1/AWSSDK.DynamoDBv2.dll": {}
         },
         "runtime": {
           "lib/netcoreapp3.1/AWSSDK.DynamoDBv2.dll": {}
+        }
+      },
+      "AWSSDK.SQS/3.7.2.68": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.7.11.15, 4.0.0)"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/AWSSDK.SQS.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.SQS.dll": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
       "Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "AWSSDK.DynamoDBv2": "3.7.3.35",
+          "AWSSDK.DynamoDBv2": "3.7.3.47",
+          "AWSSDK.SQS": "3.7.2.68",
           "Amazon.Lambda.Core": "2.1.0",
           "Amazon.Lambda.DynamoDBEvents": "2.1.1",
-          "Amazon.Lambda.Serialization.SystemTextJson": "2.3.0"
+          "Amazon.Lambda.Serialization.SystemTextJson": "2.3.0",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.dll": {}
+        }
+      }
+    },
+    "net6.0/linux-x64": {
+      "Amazon.Lambda.Core/2.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Amazon.Lambda.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Amazon.Lambda.Core.dll": {}
+        }
+      },
+      "Amazon.Lambda.DynamoDBEvents/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.DynamoDBv2": "3.7.3.24"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Amazon.Lambda.DynamoDBEvents.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Amazon.Lambda.DynamoDBEvents.dll": {}
+        }
+      },
+      "Amazon.Lambda.Serialization.SystemTextJson/2.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Amazon.Lambda.Core": "2.1.0"
+        },
+        "compile": {
+          "lib/net6.0/Amazon.Lambda.Serialization.SystemTextJson.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Amazon.Lambda.Serialization.SystemTextJson.dll": {}
+        }
+      },
+      "AWSSDK.Core/3.7.11.15": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {}
+        }
+      },
+      "AWSSDK.DynamoDBv2/3.7.3.47": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.7.11.15, 4.0.0)"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/AWSSDK.DynamoDBv2.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.DynamoDBv2.dll": {}
+        }
+      },
+      "AWSSDK.SQS/3.7.2.68": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.7.11.15, 4.0.0)"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/AWSSDK.SQS.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.SQS.dll": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AWSSDK.DynamoDBv2": "3.7.3.47",
+          "AWSSDK.SQS": "3.7.2.68",
+          "Amazon.Lambda.Core": "2.1.0",
+          "Amazon.Lambda.DynamoDBEvents": "2.1.1",
+          "Amazon.Lambda.Serialization.SystemTextJson": "2.3.0",
+          "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
           "bin/placeholder/Shared.dll": {}
@@ -122,15 +240,15 @@
         "lib/netcoreapp3.1/Amazon.Lambda.Serialization.SystemTextJson.xml"
       ]
     },
-    "AWSSDK.Core/3.7.11.3": {
-      "sha512": "PM5RvK6EseS8w+ODBZ/FS5AiifYYO3mYGnxvujQ5wV49InefwFlkRCIc+jx0NSUjhhuYgZjKckbj1uU8hY0r6A==",
+    "AWSSDK.Core/3.7.11.15": {
+      "sha512": "aw5j3az+IBV4KSXUwEO1A3WTdo8axLXe9CT+IKGRCfeKMEXbNKyyn+33NxjIwrTK4ocBYHpJBOlyd2ebPe/jZQ==",
       "type": "package",
-      "path": "awssdk.core/3.7.11.3",
+      "path": "awssdk.core/3.7.11.15",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "awssdk.core.3.7.11.3.nupkg.sha512",
+        "awssdk.core.3.7.11.15.nupkg.sha512",
         "awssdk.core.nuspec",
         "lib/net35/AWSSDK.Core.dll",
         "lib/net35/AWSSDK.Core.pdb",
@@ -147,16 +265,16 @@
         "tools/account-management.ps1"
       ]
     },
-    "AWSSDK.DynamoDBv2/3.7.3.35": {
-      "sha512": "ccSlanhFaVgCyqhDcqTDD8sr5Gkbl48n39trDnjnk4qKBIBzk6zAhvdfCXVHnbrgtEFbr9+ghPdSwBv+dpt+Ag==",
+    "AWSSDK.DynamoDBv2/3.7.3.47": {
+      "sha512": "tPH/i+S8aQvJrwjEeOG8PtJIWTvJz0goEi5YPEgtMc8f6tmHhthYQkSJkbGALzdh65a1uEzG5ph4P/HLS6hhKA==",
       "type": "package",
-      "path": "awssdk.dynamodbv2/3.7.3.35",
+      "path": "awssdk.dynamodbv2/3.7.3.47",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "analyzers/dotnet/cs/AWSSDK.DynamoDBv2.CodeAnalysis.dll",
-        "awssdk.dynamodbv2.3.7.3.35.nupkg.sha512",
+        "awssdk.dynamodbv2.3.7.3.47.nupkg.sha512",
         "awssdk.dynamodbv2.nuspec",
         "lib/net35/AWSSDK.DynamoDBv2.dll",
         "lib/net35/AWSSDK.DynamoDBv2.pdb",
@@ -172,6 +290,60 @@
         "lib/netstandard2.0/AWSSDK.DynamoDBv2.xml",
         "tools/install.ps1",
         "tools/uninstall.ps1"
+      ]
+    },
+    "AWSSDK.SQS/3.7.2.68": {
+      "sha512": "TP/ls9nFB1oldwW8GGVV0tbVem9a3GAaT9hO5hWb44W3N406YGdP1VOwYPbaTOfiTZIqRLmVp1XlpBTiyNvsQw==",
+      "type": "package",
+      "path": "awssdk.sqs/3.7.2.68",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "analyzers/dotnet/cs/AWSSDK.SQS.CodeAnalysis.dll",
+        "awssdk.sqs.3.7.2.68.nupkg.sha512",
+        "awssdk.sqs.nuspec",
+        "lib/net35/AWSSDK.SQS.dll",
+        "lib/net35/AWSSDK.SQS.pdb",
+        "lib/net35/AWSSDK.SQS.xml",
+        "lib/net45/AWSSDK.SQS.dll",
+        "lib/net45/AWSSDK.SQS.pdb",
+        "lib/net45/AWSSDK.SQS.xml",
+        "lib/netcoreapp3.1/AWSSDK.SQS.dll",
+        "lib/netcoreapp3.1/AWSSDK.SQS.pdb",
+        "lib/netcoreapp3.1/AWSSDK.SQS.xml",
+        "lib/netstandard2.0/AWSSDK.SQS.dll",
+        "lib/netstandard2.0/AWSSDK.SQS.pdb",
+        "lib/netstandard2.0/AWSSDK.SQS.xml",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
+    "Newtonsoft.Json/13.0.1": {
+      "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
       ]
     },
     "Shared/1.0.0": {
@@ -243,7 +415,15 @@
         "warn": true,
         "downloadDependencies": [
           {
+            "name": "Microsoft.AspNetCore.App.Runtime.linux-x64",
+            "version": "[6.0.5, 6.0.5]"
+          },
+          {
             "name": "Microsoft.NETCore.App.Crossgen2.win-x64",
+            "version": "[6.0.5, 6.0.5]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Runtime.linux-x64",
             "version": "[6.0.5, 6.0.5]"
           }
         ],
@@ -253,6 +433,11 @@
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "linux-x64": {
+        "#import": []
       }
     }
   }
