@@ -135,6 +135,10 @@
               "target": "Package",
               "version": "[2.1.1, )"
             },
+            "Amazon.Lambda.SQSEvents": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
             "Amazon.Lambda.Serialization.SystemTextJson": {
               "target": "Package",
               "version": "[2.3.0, )"

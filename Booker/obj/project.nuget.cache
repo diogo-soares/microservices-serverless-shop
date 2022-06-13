@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "I9rrYPQuVYr9LRVOjpb1aM9KMypClqADxMIpNstl4FjNQft9ufRePAvVtoOc8IBWX7P3VLq/CU0QQIfRoWMPhQ==",
+  "dgSpecHash": "OFNawkdvfprC8eYdir4ypia5jyHSXI0KLo60FnG9fp5icM5Yx6gQ+E1dAeAGNcuDYXGTIF2jfChshxK2Lm70mA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\diogo\\source\\repos\\microservices-serverless-shop\\Shared\\Shared.csproj",
+  "projectFilePath": "C:\\Users\\diogo\\source\\repos\\microservices-serverless-shop\\Booker\\Booker.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\diogo\\.nuget\\packages\\amazon.lambda.core\\2.1.0\\amazon.lambda.core.2.1.0.nupkg.sha512",
     "C:\\Users\\diogo\\.nuget\\packages\\amazon.lambda.dynamodbevents\\2.1.1\\amazon.lambda.dynamodbevents.2.1.1.nupkg.sha512",
@@ -11,7 +11,8 @@
     "C:\\Users\\diogo\\.nuget\\packages\\awssdk.core\\3.7.11.15\\awssdk.core.3.7.11.15.nupkg.sha512",
     "C:\\Users\\diogo\\.nuget\\packages\\awssdk.dynamodbv2\\3.7.3.35\\awssdk.dynamodbv2.3.7.3.35.nupkg.sha512",
     "C:\\Users\\diogo\\.nuget\\packages\\awssdk.sqs\\3.7.2.68\\awssdk.sqs.3.7.2.68.nupkg.sha512",
-    "C:\\Users\\diogo\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+    "C:\\Users\\diogo\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\diogo\\.nuget\\packages\\microsoft.netcore.app.crossgen2.win-x64\\6.0.5\\microsoft.netcore.app.crossgen2.win-x64.6.0.5.nupkg.sha512"
   ],
   "logs": []
 }

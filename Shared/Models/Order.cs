@@ -6,9 +6,10 @@ namespace Shared
 {
     public enum StatusOder
     {
-        Collected,
-        PaidOut,
-        Billed
+        collected,
+        paidOut,
+        billed,
+        reserved
     }
 
 

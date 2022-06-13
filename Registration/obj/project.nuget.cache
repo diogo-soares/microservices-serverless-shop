@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "QkHgRrTrVJuFMF1pFM1utfAlv/8fAfc3m+JXGMBndzxpIajlcvVa2uKFbokCnJ0bAYImVl1df157Nw5IfOojbQ==",
+  "dgSpecHash": "D1YnbHVQwPkUYkA4mfF1N1vtwRNRiAExeYwhbxGu649TE4ua+koe3QYCccTmVIjDPrUuijOL4S0rKPAgZ2Frig==",
   "success": true,
   "projectFilePath": "C:\\Users\\diogo\\source\\repos\\microservices-serverless-shop\\Registration\\Registration.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,7 @@
     "C:\\Users\\diogo\\.nuget\\packages\\amazon.lambda.dynamodbevents\\2.1.1\\amazon.lambda.dynamodbevents.2.1.1.nupkg.sha512",
     "C:\\Users\\diogo\\.nuget\\packages\\amazon.lambda.logging.aspnetcore\\3.1.0\\amazon.lambda.logging.aspnetcore.3.1.0.nupkg.sha512",
     "C:\\Users\\diogo\\.nuget\\packages\\amazon.lambda.serialization.systemtextjson\\2.3.0\\amazon.lambda.serialization.systemtextjson.2.3.0.nupkg.sha512",
+    "C:\\Users\\diogo\\.nuget\\packages\\amazon.lambda.sqsevents\\2.1.0\\amazon.lambda.sqsevents.2.1.0.nupkg.sha512",
     "C:\\Users\\diogo\\.nuget\\packages\\awssdk.core\\3.7.11.15\\awssdk.core.3.7.11.15.nupkg.sha512",
     "C:\\Users\\diogo\\.nuget\\packages\\awssdk.dynamodbv2\\3.7.3.35\\awssdk.dynamodbv2.3.7.3.35.nupkg.sha512",
     "C:\\Users\\diogo\\.nuget\\packages\\awssdk.sqs\\3.7.2.68\\awssdk.sqs.3.7.2.68.nupkg.sha512",
