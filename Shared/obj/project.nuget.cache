@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "I9rrYPQuVYr9LRVOjpb1aM9KMypClqADxMIpNstl4FjNQft9ufRePAvVtoOc8IBWX7P3VLq/CU0QQIfRoWMPhQ==",
+  "dgSpecHash": "SeHsQgzXlC4+XHb83FWvFgSy169jGS3a3CaHJyEC3DJoPECtfA2OQ9gEOyH+1XKmxZ2LkPIhPRRV+LI5pBaVlw==",
   "success": true,
   "projectFilePath": "C:\\Users\\diogo\\source\\repos\\microservices-serverless-shop\\Shared\\Shared.csproj",
   "expectedPackageFiles": [
@@ -9,7 +9,7 @@
     "C:\\Users\\diogo\\.nuget\\packages\\amazon.lambda.serialization.systemtextjson\\2.3.0\\amazon.lambda.serialization.systemtextjson.2.3.0.nupkg.sha512",
     "C:\\Users\\diogo\\.nuget\\packages\\amazon.lambda.sqsevents\\2.1.0\\amazon.lambda.sqsevents.2.1.0.nupkg.sha512",
     "C:\\Users\\diogo\\.nuget\\packages\\awssdk.core\\3.7.11.15\\awssdk.core.3.7.11.15.nupkg.sha512",
-    "C:\\Users\\diogo\\.nuget\\packages\\awssdk.dynamodbv2\\3.7.3.35\\awssdk.dynamodbv2.3.7.3.35.nupkg.sha512",
+    "C:\\Users\\diogo\\.nuget\\packages\\awssdk.dynamodbv2\\3.7.3.47\\awssdk.dynamodbv2.3.7.3.47.nupkg.sha512",
     "C:\\Users\\diogo\\.nuget\\packages\\awssdk.sqs\\3.7.2.68\\awssdk.sqs.3.7.2.68.nupkg.sha512",
     "C:\\Users\\diogo\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],

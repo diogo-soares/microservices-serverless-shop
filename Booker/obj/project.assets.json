@@ -53,10 +53,10 @@
           "lib/netcoreapp3.1/AWSSDK.Core.dll": {}
         }
       },
-      "AWSSDK.DynamoDBv2/3.7.3.35": {
+      "AWSSDK.DynamoDBv2/3.7.3.47": {
         "type": "package",
         "dependencies": {
-          "AWSSDK.Core": "[3.7.11.3, 4.0.0)"
+          "AWSSDK.Core": "[3.7.11.15, 4.0.0)"
         },
         "compile": {
           "lib/netcoreapp3.1/AWSSDK.DynamoDBv2.dll": {}
@@ -90,7 +90,112 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "AWSSDK.DynamoDBv2": "3.7.3.35",
+          "AWSSDK.DynamoDBv2": "3.7.3.47",
+          "AWSSDK.SQS": "3.7.2.68",
+          "Amazon.Lambda.Core": "2.1.0",
+          "Amazon.Lambda.DynamoDBEvents": "2.1.1",
+          "Amazon.Lambda.SQSEvents": "2.1.0",
+          "Amazon.Lambda.Serialization.SystemTextJson": "2.3.0",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.dll": {}
+        }
+      }
+    },
+    "net6.0/linux-x64": {
+      "Amazon.Lambda.Core/2.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Amazon.Lambda.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Amazon.Lambda.Core.dll": {}
+        }
+      },
+      "Amazon.Lambda.DynamoDBEvents/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.DynamoDBv2": "3.7.3.24"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Amazon.Lambda.DynamoDBEvents.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Amazon.Lambda.DynamoDBEvents.dll": {}
+        }
+      },
+      "Amazon.Lambda.Serialization.SystemTextJson/2.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Amazon.Lambda.Core": "2.1.0"
+        },
+        "compile": {
+          "lib/net6.0/Amazon.Lambda.Serialization.SystemTextJson.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Amazon.Lambda.Serialization.SystemTextJson.dll": {}
+        }
+      },
+      "Amazon.Lambda.SQSEvents/2.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/Amazon.Lambda.SQSEvents.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Amazon.Lambda.SQSEvents.dll": {}
+        }
+      },
+      "AWSSDK.Core/3.7.11.15": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {}
+        }
+      },
+      "AWSSDK.DynamoDBv2/3.7.3.47": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.7.11.15, 4.0.0)"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/AWSSDK.DynamoDBv2.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.DynamoDBv2.dll": {}
+        }
+      },
+      "AWSSDK.SQS/3.7.2.68": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.7.11.15, 4.0.0)"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/AWSSDK.SQS.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.SQS.dll": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AWSSDK.DynamoDBv2": "3.7.3.47",
           "AWSSDK.SQS": "3.7.2.68",
           "Amazon.Lambda.Core": "2.1.0",
           "Amazon.Lambda.DynamoDBEvents": "2.1.1",
@@ -195,16 +300,16 @@
         "tools/account-management.ps1"
       ]
     },
-    "AWSSDK.DynamoDBv2/3.7.3.35": {
-      "sha512": "ccSlanhFaVgCyqhDcqTDD8sr5Gkbl48n39trDnjnk4qKBIBzk6zAhvdfCXVHnbrgtEFbr9+ghPdSwBv+dpt+Ag==",
+    "AWSSDK.DynamoDBv2/3.7.3.47": {
+      "sha512": "tPH/i+S8aQvJrwjEeOG8PtJIWTvJz0goEi5YPEgtMc8f6tmHhthYQkSJkbGALzdh65a1uEzG5ph4P/HLS6hhKA==",
       "type": "package",
-      "path": "awssdk.dynamodbv2/3.7.3.35",
+      "path": "awssdk.dynamodbv2/3.7.3.47",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "analyzers/dotnet/cs/AWSSDK.DynamoDBv2.CodeAnalysis.dll",
-        "awssdk.dynamodbv2.3.7.3.35.nupkg.sha512",
+        "awssdk.dynamodbv2.3.7.3.47.nupkg.sha512",
         "awssdk.dynamodbv2.nuspec",
         "lib/net35/AWSSDK.DynamoDBv2.dll",
         "lib/net35/AWSSDK.DynamoDBv2.pdb",
@@ -345,7 +450,15 @@
         "warn": true,
         "downloadDependencies": [
           {
+            "name": "Microsoft.AspNetCore.App.Runtime.linux-x64",
+            "version": "[6.0.5, 6.0.5]"
+          },
+          {
             "name": "Microsoft.NETCore.App.Crossgen2.win-x64",
+            "version": "[6.0.5, 6.0.5]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Runtime.linux-x64",
             "version": "[6.0.5, 6.0.5]"
           }
         ],
@@ -355,6 +468,11 @@
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "linux-x64": {
+        "#import": []
       }
     }
   }

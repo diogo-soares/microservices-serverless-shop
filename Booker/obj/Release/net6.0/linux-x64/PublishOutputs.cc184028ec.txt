@@ -1,0 +1,14 @@
+C:\Users\diogo\source\repos\microservices-serverless-shop\Booker\bin\Release\net6.0\publish\Booker.deps.json
+C:\Users\diogo\source\repos\microservices-serverless-shop\Booker\bin\Release\net6.0\publish\Booker.runtimeconfig.json
+C:\Users\diogo\source\repos\microservices-serverless-shop\Booker\bin\Release\net6.0\publish\Booker.pdb
+C:\Users\diogo\source\repos\microservices-serverless-shop\Booker\bin\Release\net6.0\publish\Shared.pdb
+C:\Users\diogo\source\repos\microservices-serverless-shop\Booker\bin\Release\net6.0\publish\Amazon.Lambda.Core.dll
+C:\Users\diogo\source\repos\microservices-serverless-shop\Booker\bin\Release\net6.0\publish\Amazon.Lambda.DynamoDBEvents.dll
+C:\Users\diogo\source\repos\microservices-serverless-shop\Booker\bin\Release\net6.0\publish\Amazon.Lambda.Serialization.SystemTextJson.dll
+C:\Users\diogo\source\repos\microservices-serverless-shop\Booker\bin\Release\net6.0\publish\Amazon.Lambda.SQSEvents.dll
+C:\Users\diogo\source\repos\microservices-serverless-shop\Booker\bin\Release\net6.0\publish\AWSSDK.Core.dll
+C:\Users\diogo\source\repos\microservices-serverless-shop\Booker\bin\Release\net6.0\publish\AWSSDK.DynamoDBv2.dll
+C:\Users\diogo\source\repos\microservices-serverless-shop\Booker\bin\Release\net6.0\publish\AWSSDK.SQS.dll
+C:\Users\diogo\source\repos\microservices-serverless-shop\Booker\bin\Release\net6.0\publish\Newtonsoft.Json.dll
+C:\Users\diogo\source\repos\microservices-serverless-shop\Booker\bin\Release\net6.0\publish\Shared.dll
+C:\Users\diogo\source\repos\microservices-serverless-shop\Booker\bin\Release\net6.0\publish\Booker.dll

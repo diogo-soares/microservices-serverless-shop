@@ -55,11 +55,13 @@ public class Function
 
         if (order.Canceled)
         {
-            foreach(var product in order.Products)
+            foreach (var product in order.Products)
             {
-                if(product.Reserved)
+                if (product.Reserved)
                 {
                     await ReturnToStock(product.Id, product.Amount);
+                    product.Reserved = false;
+                    order.CancellationJustification = $"product returned to stock {product.Id} - {product.Name}";
                 }
 
                 await AmazonUtil.SendToQueue(EnumQueueSNS.failure, order);
@@ -73,13 +75,44 @@ public class Function
         }
     }
 
-    private Task ReturnToStock(string id, int amount)
+    private async Task ReturnToStock(string id, int amount)
     {
-        throw new NotImplementedException();
+        var request = new UpdateItemRequest
+        {
+             TableName = "stock",
+             ReturnValues = "NONE",
+             Key = new Dictionary<string, AttributeValue>
+             {
+                 { "Id", new AttributeValue{ S = id} }
+             },
+             UpdateExpression = "SET Amount = (Amount - :orderQuantity)",
+             ConditionExpression = "Amount >= :orderQuantity",
+             ExpressionAttributeValues = new Dictionary<string, AttributeValue>
+             {
+                 { ":orderQuantity", new AttributeValue{ N = amount.ToString() } }
+             }
+        };
+
+        await AmazonDynamoDBClient.UpdateItemAsync(request);
     }
 
-    private Task WithdrawFromStock(object id, object )
+    private async Task WithdrawFromStock(string id, int amount)
     {
-        throw new NotImplementedException();
+        var request = new UpdateItemRequest
+        {
+            TableName = "stock",
+            ReturnValues = "NONE",
+            Key = new Dictionary<string, AttributeValue>
+             {
+                 { "id", new AttributeValue{ S = id} }
+             },
+            UpdateExpression = "SET Amount = (Amount + :orderQuantity)",
+            ExpressionAttributeValues = new Dictionary<string, AttributeValue>
+             {
+                 { ":orderQuantity", new AttributeValue{ N = amount.ToString() } }
+             }
+        };
+
+        await AmazonDynamoDBClient.UpdateItemAsync(request);
     }
 }

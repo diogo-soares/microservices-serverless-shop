@@ -45,7 +45,7 @@
           "dependencies": {
             "AWSSDK.DynamoDBv2": {
               "target": "Package",
-              "version": "[3.7.3.35, )"
+              "version": "[3.7.3.47, )"
             },
             "AWSSDK.SQS": {
               "target": "Package",
@@ -88,6 +88,11 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "linux-x64": {
+          "#import": []
         }
       }
     }
