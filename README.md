@@ -13,7 +13,7 @@ If you liked the project please give a star
 
 ## Technologies implemented:
 
-Amazon Simple Queue Service
-Amazon DynamoDB
-Amazon Lambda
-Amazon SQS dead-letter queues
+- Amazon Simple Queue Service
+- Amazon DynamoDB
+- Amazon Lambda
+- Amazon SQS dead-letter queues
